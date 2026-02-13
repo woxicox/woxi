@@ -149,23 +149,22 @@ body {
   font-size: 13px;
   pointer-events: none;
 }
+/* Telegram link style */
 .contact-row {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin: 16px 0 22px;
-  color: #e9eefc; /* gaišāks teksts */
+  margin: 18px 0 24px;
   font-size: 16px;
+  color: #ffffff;
 }
 
 .contact-link {
+  margin-left: 6px;
+  font-weight: 800;
+  color: #00e5ff; /* Aqua */
   text-decoration: none;
-  font-weight: 700;
-  color: #38bdf8; /* Telegram zilais */
-  transition: color 0.2s ease, text-shadow 0.2s ease;
+  transition: color 0.2s ease, transform 0.2s ease;
 }
 
 .contact-link:hover {
-  color: #60a5fa;
-  text-shadow: 0 0 8px rgba(56, 189, 248, 0.6);
+  color: #4df3ff;
+  transform: translateY(-1px);
 }
