@@ -1,0 +1,151 @@
+/* Pamata uzstādījumi */
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  color: #e9eefc;
+  background: radial-gradient(1200px 600px at 20% 10%, #2b3cff33, transparent 60%),
+              radial-gradient(1000px 700px at 80% 30%, #00ffd533, transparent 55%),
+              #070a12;
+}
+
+/* Augšējā josla */
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 14px 20px;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  backdrop-filter: blur(10px);
+  background: rgba(7, 10, 18, 0.55);
+}
+
+.brand {
+  font-weight: 800;
+  letter-spacing: 0.5px;
+}
+
+/* Navigācija */
+.nav {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #cfe2ff;
+  padding: 8px 12px;
+  border-radius: 999px;
+  transition: transform 120ms ease, background 120ms ease, color 120ms ease;
+  border: 1px solid rgba(255,255,255,0.10);
+  background: rgba(255,255,255,0.03);
+}
+
+.nav-link:hover {
+  transform: translateY(-1px);
+  background: rgba(255,255,255,0.08);
+  color: #ffffff;
+}
+
+.nav-link.active {
+  border-color: rgba(99, 102, 241, 0.6);
+  background: rgba(99, 102, 241, 0.18);
+}
+
+/* Centrālais bloks */
+.center {
+  min-height: calc(100vh - 64px);
+  display: grid;
+  place-items: center;
+  padding: 28px 16px 80px;
+}
+
+.card {
+  width: min(780px, 92vw);
+  padding: 28px 24px;
+  border-radius: 20px;
+  border: 1px solid rgba(255,255,255,0.10);
+  background: rgba(255,255,255,0.04);
+  box-shadow: 0 16px 60px rgba(0,0,0,0.45);
+}
+
+.card h1 {
+  margin: 0 0 10px;
+  font-size: clamp(28px, 4vw, 44px);
+  line-height: 1.1;
+}
+
+.card p {
+  margin: 0 0 18px;
+  color: #c8d4f0;
+  font-size: 16px;
+}
+
+.accent {
+  background: linear-gradient(90deg, #60a5fa, #34d399, #a78bfa);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Pogas */
+.buttons {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 14px;
+  border-radius: 12px;
+  text-decoration: none;
+  color: #0b1020;
+  font-weight: 700;
+  background: #e9eefc;
+  border: 1px solid rgba(255,255,255,0.18);
+  transition: transform 120ms ease, opacity 120ms ease;
+}
+.btn:hover { transform: translateY(-1px); opacity: 0.95; }
+
+.btn.btn-ghost {
+  background: transparent;
+  color: #e9eefc;
+  border: 1px solid rgba(255,255,255,0.18);
+}
+
+/* Sadaļas zemāk (lai var scroll) */
+.section {
+  width: min(780px, 92vw);
+  margin-top: 18px;
+  padding: 18px 24px;
+  border-radius: 18px;
+  border: 1px solid rgba(255,255,255,0.08);
+  background: rgba(255,255,255,0.02);
+}
+
+.section h2 {
+  margin: 0 0 8px;
+}
+.section p {
+  margin: 0;
+  color: #c8d4f0;
+}
+
+/* Kājene */
+.footer {
+  position: fixed;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: rgba(233, 238, 252, 0.6);
+  font-size: 13px;
+  pointer-events: none;
+}
