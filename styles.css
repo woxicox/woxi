@@ -156,14 +156,15 @@ body {
   color: #ffffff;
 }
 
-.contact-link,
-.contact-link:visited,
-.contact-link:hover,
-.contact-link:active {
-  color: #00e5ff !important; /* Aqua */
-  font-weight: 800;
-  text-decoration: none;
+/* Force Telegram link color */
+a.contact-link,
+a.contact-link:visited,
+a.contact-link:hover,
+a.contact-link:active {
+  color: #00e5ff !important;
+  text-decoration: none !important;
 }
+
 
 .contact-link:hover {
   text-decoration: underline;
